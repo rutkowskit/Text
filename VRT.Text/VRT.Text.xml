@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VRT.Text</name>
+    </assembly>
+    <members>
+        <member name="M:VRT.Text.Builders.StringExtensions.AsTextComposite(System.String)">
+            <summary>
+            Method translates templateText into TextComponent (composite)
+            </summary>
+            <param name="templateText">Template text i.e. Hello {Name} </param>
+            <returns>TextComponent able to create string based on provided placeholder values</returns>
+        </member>
+        <member name="T:VRT.Text.Builders.TemplateStringBuilder">
+            <summary>
+            Templated string builder
+            </summary>
+        </member>
+        <member name="P:VRT.Text.Builders.TemplateStringBuilder.Empty">
+            <summary>
+            Provides empty TemplateStringBuilder
+            </summary>
+        </member>
+        <member name="M:VRT.Text.Builders.TemplateStringBuilder.Create(System.String)">
+            <summary>
+            Creates instance of TemplateStringBuilder for given template
+            </summary>
+            <param name="template">template text</param>
+            <returns>TemplateStringBuilder instance</returns>
+        </member>
+        <member name="M:VRT.Text.Builders.TemplateStringBuilder.ToString">
+            <summary>
+            Overriden default ToString method
+            </summary>
+            <returns>Retunrs originla template text</returns>
+        </member>
+        <member name="M:VRT.Text.Builders.TemplateStringBuilder.op_Explicit(System.String)~VRT.Text.Builders.TemplateStringBuilder">
+            <summary>
+            Explicit cast operator from string to TemplateStringBuilder
+            </summary>
+            <param name="template">Template text</param>
+        </member>
+        <member name="M:VRT.Text.Builders.TemplateStringBuilder.op_Explicit(VRT.Text.Builders.TemplateStringBuilder)~System.String">
+            <summary>
+            Explicit cast operator from TemplateStringBuilder to string
+            </summary>
+            <param name="templateString">Template text</param>
+        </member>
+        <member name="M:VRT.Text.Builders.TemplateStringBuilder.ToString(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String})">
+            <summary>
+            Creates string by replacing placeholders within template with provided placeholderValues
+            </summary>
+            <param name="placeholderValues">Placeholder values dictionary</param>        
+        </member>
+        <member name="M:VRT.Text.Builders.TemplateStringBuilder.ToString(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            Creates string by replacing placeholders within template with provided placeholderValues
+            </summary>
+            <param name="placeholderValues">Placeholder values dictionary</param>
+            <param name="preserveUnresolvedPlaceholderNames">Preserves placeholders in output string if no corresponding value was provided</param>        
+        </member>
+        <member name="T:VRT.Text.TextBuilders.PlaceholderComponent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:VRT.Text.TextBuilders.PlaceholderComponent.Placeholder">
+            <summary>
+            Placeholder name
+            </summary>
+        </member>
+        <member name="M:VRT.Text.TextBuilders.PlaceholderComponent.BuildTextPart(System.Collections.Generic.IReadOnlyDictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            Flaga określająca czy nalezy wyświetlić nazwę etykiety jeśli w metadanych nie ma  wartości
+            </summary>
+        </member>
+        <member name="T:VRT.Text.TextBuilders.StaticTextComponent">
+            <inheritdoc />
+            <summary>
+            Visitor dokładający tekst stały do obiektu wizytującego
+            </summary>
+        </member>
+        <member name="M:VRT.Text.TextBuilders.StaticTextComponent.#ctor(System.String)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="staticText">Tekst stały jaki visitor będzie dokładał</param>
+        </member>
+        <member name="P:VRT.Text.TextBuilders.StaticTextComponent.StaticText">
+            <summary>
+            Tekst stały jaki visitor będzie dokładał
+            </summary>
+        </member>
+        <member name="T:VRT.Text.TextBuilders.TextComponent">
+            <summary>
+            Abstract text component class
+            </summary>
+        </member>
+    </members>
+</doc>

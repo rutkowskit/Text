@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+    <Authors>Tomasz Rutkowski</Authors>
+    <Description>My commont text tools and builders (i.e. TemplateStringBuilder)</Description>
+    <Copyright>Tomasz Rutkowski</Copyright>
+    <PackageLicenseExpression>Apache License 2.0</PackageLicenseExpression>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
+    <DocumentationFile>e:\Projects\Common\Text\VRT.Text\VRT.Text.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
+    <DocumentationFile>e:\Projects\Common\Text\VRT.Text\VRT.Text.xml</DocumentationFile>
+  </PropertyGroup>
+</Project>
