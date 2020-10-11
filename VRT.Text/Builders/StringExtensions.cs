@@ -2,7 +2,7 @@
 using VRT.Text.TextBuilders;
 
 namespace VRT.Text.Builders
-{   
+{
     internal static class StringExtensions
     {
         /// <summary>

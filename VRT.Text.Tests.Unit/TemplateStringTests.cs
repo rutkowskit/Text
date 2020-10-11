@@ -237,7 +237,7 @@ namespace VRT.Text.Tests
         //    //    Assert.Equal(expectedText, t);
         //    //}
         //}
-
+        
         private TemplateStringBuilder CreateSut(string template)
         {            
             return TemplateStringBuilder.Create(template);

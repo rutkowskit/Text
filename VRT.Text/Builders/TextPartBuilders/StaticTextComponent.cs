@@ -20,8 +20,10 @@ namespace VRT.Text.TextBuilders
         /// Tekst stały jaki visitor będzie dokładał
         /// </summary>
         public string StaticText { get; }
+        public override string ToString() => StaticText;
 
         protected override string BuildTextPart(IReadOnlyDictionary<string, string> values,
-            bool preserveUnresolvedPlaceholderNames) => StaticText;                            
+            bool preserveUnresolvedPlaceholderNames) => StaticText;        
+
     }
 }

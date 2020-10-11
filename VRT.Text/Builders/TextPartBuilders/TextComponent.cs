@@ -35,5 +35,6 @@ namespace VRT.Text.TextBuilders
 
         protected abstract string BuildTextPart(IReadOnlyDictionary<string, string> values,
              bool preserveUnresolvedPlaceholderNames);
+        
     }
 }

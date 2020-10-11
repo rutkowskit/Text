@@ -15,6 +15,8 @@ namespace VRT.Text.TextBuilders
         /// Placeholder name
         /// </summary>
         public string Placeholder { get; }
+        public override string ToString() => Placeholder;
+
         /// <summary>
         /// Flaga określająca czy nalezy wyświetlić nazwę etykiety jeśli w metadanych nie ma  wartości
         /// </summary>
